@@ -38,12 +38,9 @@ android {
 }
 
 dependencies {
-    implementation project(modulePrefix + 'library-core')
+    implementation project(path: ':libraries:exoplayer:library:core')
     implementation 'androidx.annotation:annotation:1.1.0'
     compileOnly 'org.checkerframework:checker-qual:' + checkerframeworkVersion
-    androidTestImplementation project(modulePrefix + 'testutils')
-    androidTestImplementation 'androidx.test:runner:' + androidXTestVersion
-    testImplementation project(modulePrefix + 'testutils-robolectric')
 }
 
 ext {
